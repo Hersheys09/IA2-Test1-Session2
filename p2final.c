@@ -1,4 +1,4 @@
-//#include <stdio.h>
+#include <stdio.h>
 
 int input_side()
 {
@@ -20,7 +20,7 @@ int check_scalene(int a, int b, int c)
 
 void output(int a, int b, int c, int isscalene)
 {
-   if (isscalene == 0)
+   if (isscalene == 1)
    printf("Triangle of side %d, %d and %d is NOT Scalene\n", a, b, c);
     
   else
