@@ -1,11 +1,13 @@
 #include <stdio.h>
+
 int input()
 {
-  int num;
+  int n;
   printf("Enter a number:\n");
-  scanf("%d", &num);
-  return num;
+  scanf("%d", &n);
+  return n;
 }
+
 int gcd(int a, int b)
 {
     int large = a > b ? a : b;
@@ -29,14 +31,14 @@ int gcd(int a, int b)
 
 void output(int a, int b, int gcd)
 {
-  printf("The gcd of %d and %d is %d\n", a, b, gcd);
+  printf("The hcf of %d and %d is %d\n", a, b, gcd);
 }
 
 int main()
 {
-  int num1 = input();
-  int num2 = input();
-  int res = gcd(num1, num2);
-  output(num1, num2, res);
+  int n1 = input();
+  int n2 = input();
+  int res = gcd(n1, n2);
+  output(n1, n2, res);
   return 0;
 }
