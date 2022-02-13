@@ -10,17 +10,15 @@ int input_side()
 
 int check_scalene(int a, int b, int c)
 {
-  int r;
-  if(a != b != c)
-    r=0;
+  if(a != b && a != c && b != c)
+    return 1;
   else
-    r=1;
-  return r;
+    return 0;
 }
 
 void output(int a, int b, int c, int isscalene)
 {
-   if (isscalene == 1)
+   if (isscalene == 0)
    printf("Triangle of side %d, %d and %d is NOT Scalene\n", a, b, c);
     
   else
